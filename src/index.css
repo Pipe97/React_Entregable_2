@@ -1,11 +1,17 @@
 *,
 *::after,
 *::before {
-
-    box-sizing: border-box;
-
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-  margin: 0;
+body {
+  background: #191919;
+  background: linear-gradient(
+    #121224,
+    rgba(213, 243, 255, 0.026),
+    #121224
+  );
+  color: aliceblue;
 }

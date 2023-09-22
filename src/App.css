@@ -1,62 +1,64 @@
-* {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container_principal{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(73, 148, 245);
-    padding: 80px;
-    border: 1px ;
-    
-   
+
+body {
+  font-family: "Black Ops One", cursive;
+  font-family: "Inspiration", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.tittle_principal{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(73, 148, 245);
-    margin: auto;
+.container_app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
 }
-.change_button{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    justify-items: center;
-    background-color: rgb(3, 45, 100);
-    color: white;
-    margin: auto;
-    position: absolute;
-    bottom: 200px;
-    left: 47.5%;
+.title {
+  text-align: start;
+  font-weight: 600;
+  font-size: 23.0593px;
+  color: aliceblue;
 }
-.subtitle{
-    position: absolute;
-   margin-bottom: 35rem;
+.weather_container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
-.parrafo_1{
-    position: absolute;
-    top: 130px; 
+.cotainer_button {
+  display: flex;
+  justify-content: center;
 }
-.parrafo_2{
-    position: absolute;
-   margin-bottom: 20rem;
+button {
+  font-weight: 600;
+  font-size: 20px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  background-color: #2a3846;
+  border: solid 1px rgb(184, 206, 237);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.5s;
 }
-.icon {
-    position: absolute;
-    
-   margin-bottom: 10rem;
+button:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 1px 7px 2px rgba(3, 3, 3, 0.2);
 }
-.loading{
-    background-color: rgb(73, 148, 245);
+.loading {
+  font-style: oblique;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0, 81, 255, 0.562);
 }
-   
-   
